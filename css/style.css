@@ -1,3 +1,33 @@
-body {
-  background-color: aqua;
+/* START : header */
+.header {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
+
+.header__image {
+  width: 100px;
+}
+
+.header__link {
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.header__link--blue {
+  background-color: #2e94fa;
+  color: #ffffff;
+}
+
+.header__link--grey {
+  background-color: #f4f4f4;
+  color: #2e94fa;
+}
+
+
+
+/* END : header */
