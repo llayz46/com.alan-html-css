@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Recode Alan.com</title>
+    <title>Copycat Alan.com</title>
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -11,17 +11,41 @@
     <!-- START : import font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- END : import font -->
   </head>
 
   <body>
     <!-- START : header -->
     <header class="header">
-      <img class="header__image" src="assets/images/logo.png" alt="Logo Alan"/>
+      <img class="header__image" src="./assets/icons/logo-alan.svg" alt="Logo Alan"/>
       <nav class="header__nav">
-        <a class="header__link header__link--blue" href="#">Découvrir les offres</a>
-        <a class="header__link header__link--grey" href="#">Me connecter</a>
+        <ul class="header__list-link">
+          <li class="header__container-link">
+            <a class="header__dropdown" href="#">Nos offres</a>
+            <img class="header__arrow" src="./assets/icons/arrow-down.svg" alt="Arrow down">
+          </li>
+
+          <li class="header__container-link">
+            <a class="header__dropdown" href="#">Pour nos membres</a>
+            <img class="header__arrow" src="./assets/icons/arrow-down.svg" alt="Arrow down">
+          </li>
+
+          <li class="header__container-link">
+            <a class="header__dropdown" href="#">Ressources</a>
+            <img class="header__arrow" src="./assets/icons/arrow-down.svg" alt="Arrow down">
+          </li>
+
+          <li class="header__container-link">
+            <a class="header__dropdown" href="#">A propos d'Alan</a>
+            <img class="header__arrow" src="./assets/icons/arrow-down.svg" alt="Arrow down">
+          </li>
+
+          <li class="header__container-link">
+            <a class="header__link header__link--nbg" href="#">Me connecter</a>
+            <a class="header__link header__link--bg" href="#">Découvrir les offres</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- END : header -->
@@ -48,7 +72,7 @@
 
       <!-- START : offers -->
       <section class="offers flux">
-        <h2 class="offers__title">Trouvez la couverture santé pensée pour vous.</h2>
+        <h2 class="offers__title t-title">Trouvez la couverture santé pensée pour vous.</h2>
         <ul class="offers__list">
           <li class="card-offer">
             <div class="card-offer__header">
@@ -102,6 +126,11 @@
             </p>
           </li>
         </ul>
+
+        <div class="offers__question">
+          <img class="offers__emoji" src="./assets/icons/handshake-emoji.png" alt="Emoji handshaking">
+          <p class="offers__inscription">Salarié(e) d'une entreprise qui a rejoint Alan ? <a class="t-link" href="#">Découvrez comment vous inscrire</a></p>
+        </div>
       </section>
       <!-- END : offers -->
     </main>
