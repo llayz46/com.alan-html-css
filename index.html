@@ -11,7 +11,7 @@
     <!-- START : import font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- END : import font -->
   </head>
 
@@ -33,71 +33,77 @@
         <div class="hero__flux flux">
           <div class="hero__container-texts">
             <h1 class="hero__title">L’assurance santé qui fait simple.</h1>
-            <p class="hero__description">14 000 entreprises de toutes tailles, des start-ups aux grandes entreprises, et des milliers d’indépendants font confiance à Alan pour leur protection santé.</p>
+            <p class="hero__introduction">14 000 entreprises de toutes tailles, des start-ups aux grandes entreprises, et des milliers d’indépendants font confiance à Alan pour leur protection santé.</p>
           </div>
           <div class="hero__container-images">
             <img class="hero__image" src="assets/images/homepage-dashboard.png" alt="Capture d'écran du tableau de bord version ordinateur"/>
             <img class="hero__image" src="assets/images/homepage-mobile.png" alt="Capture d'écran du tableau de bord version mobile"/>
           </div>
         </div>
-        <video class="hero__video">
-          <source src="./assets/videos/loop-video.mp4">
+        <video class="hero__video" autoplay loop muted>
+          <source src="./assets/videos/loop-video.mp4" type="video/mp4">
         </video>
       </section>
       <!-- END : hero -->
 
-      <!-- START : Second section flux -->
-      <section>
-        <h2>Nos offres pensées <strong>pour vous, avec vous</strong></h2>
-        <p>
-          👋 Salarié(e) d'une entreprise qui a rejoint Alan ?
-          <a href="#">Découvrez comment vous inscrire</a>
-        </p>
+      <!-- START : offers -->
+      <section class="offers flux">
+        <h2 class="offers__title">Trouvez la couverture santé pensée pour vous.</h2>
+        <ul class="offers__list">
+          <li class="card-offer">
+            <div class="card-offer__header">
+              <div class="card-offer__left">
+                <img class="card-offer__icon" src="/assets/icons/emoji-startup-tpe.svg" alt="Emoji 1 bonhomme (représentant les Startup et les TPE)"/>
+                <h3 class="card-offer__title">Startups &<br> TPE</h3>
+              </div>
+              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+            </div>
+            <p class="card-offer__description">
+              Vous lancez votre entreprise ? Ou vous avez <strong>moins de 6 salariés</strong> ? Alan vous simplifie les démarches et vous aide dans vos 1er pas.
+            </p>
+          </li>
 
-        <ul>
-          <li>
-            <div>
-              <img src="/assets/icons/emoji-rocket.svg" alt="Emoji fusée" />
-              <h3>Startups & PME</h3>
+          <li class="card-offer">
+            <div class="card-offer__header">
+              <div class="card-offer__left">
+                <img class="card-offer__icon" src="/assets/icons/emoji-pme.svg" alt="Emoji 2 bonhomme (représentant les PME)"/>
+                <h3 class="card-offer__title">Petites &<br> moyennes<br> entreprises</h3>
+              </div>
+              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
             </div>
-            <p>
-              Gagnez un temps fou sur la gestion de votre assurance santé et
-              prenez soin de vos salariés.
+            <p class="card-offer__description">
+              Vous avez entre <strong>6 et 100 salariés</strong> ? Découvrez nos offres que ce soit pour gagner du temps, réduire vos coûts ou offrir le meilleur avantage à vos salariés.
             </p>
           </li>
-          <li>
-            <div>
-              <img src="/assets/icons/emoji-building.svg" alt="Emoji entreprise" />
-              <h3>Grandes entreprises</h3>
+
+          <li class="card-offer">
+            <div class="card-offer__header">
+              <div class="card-offer__left">
+                <img class="card-offer__icon" src="/assets/icons/emoji-gc.svg" alt="Emoji 3 bonhomme (représentant les Grands Comptes)"/>
+                <h3 class="card-offer__title">Grands<br> Comptes</h3>
+              </div>
+              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
             </div>
-            <p>
-              Avec Alan Enterprise, profitez d’une offre santé sur-mesure, au
-              plus proche des besoins de vos collaborateurs.
+            <p class="card-offer__description">
+              Plusieurs <strong>centaines ou milliers de salariés</strong> ? Découvrez notre modèle intégré conseil, assurance & gestion et construisons ensemble l’offre sur-mesure pour prendre soin de vos équipes.
             </p>
           </li>
-          <li>
-            <div>
-              <img src="/assets/icons/emoji-restaurant.svg" alt="Emoji restaurant" />
-              <h3>Hôtels & Restaurants</h3>
+
+          <li class="card-offer">
+            <div class="card-offer__header">
+              <div class="card-offer__left">
+                <img class="card-offer__icon" src="/assets/icons/emoji-nsalaries.svg" alt="Emoji maison (représentant les travailleurs non-salariés)"/>
+                <h3 class="card-offer__title">Travailleurs<br> non-salariés</h3>
+              </div>
+              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
             </div>
-            <p>
-              Simplifiez-vous la gestion de l’assurance santé pour vos équipes
-              au quotidien et respectez toutes vos obligations CHR.
-            </p>
-          </li>
-          <li>
-            <div>
-              <img src="/assets/icons/emoji-painter.svg" alt="Emoji indépendants" />
-              <h3>Indépendants</h3>
-            </div>
-            <p>
-              Oubliez la paperasse et profitez d’une couverture santé complète
-              pour un reste à charge minimal.
+            <p class="card-offer__description">
+              Chefs d’entreprise, freelances, auto-entrepreneurs, TNS ou mandataires sociaux, retrouvez notre offre de santé conçue <strong>pour les indépendants</strong>.
             </p>
           </li>
         </ul>
       </section>
-      <!-- END : Second section -->
+      <!-- END : offers -->
     </main>
   </body>
 </html>
