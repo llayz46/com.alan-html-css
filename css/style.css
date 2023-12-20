@@ -2,6 +2,8 @@
 :root {
   --color-blue: #2e94fa;
   --color-black: #282830;
+  --color-green: #32ce85;
+  --color-orange: #ff7045;
 }
 /* VARIABLES */
 
@@ -66,6 +68,22 @@ body {
   margin-right: auto;
 }
 /* END : flux */
+
+/* START : texts */
+.t-title {
+  font-size: 40px;
+  color: var(--color-black);
+}
+
+.t-title strong {
+  color: var(--color-green);
+}
+
+.t-link {
+ color: var(--color-blue);
+ font-weight: 600;
+}
+/* END : texts */
 
 /* START : hero */
 .hero {
@@ -180,8 +198,6 @@ body {
 }
 
 .offers__title {
-  font-size: 40px;
-  color: var(--color-black);
   margin-bottom: 24px;
 }
 
@@ -234,4 +250,127 @@ body {
   line-height: 1.4rem;
   font-weight: 600;
   color: #464754;
+}
+/* END : offers */
+
+/* START : services */
+.services__title {
+  width: 75%;
+  margin-bottom: 50px;
+}
+
+.bloc-services {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.bloc-services:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.bloc-services:nth-child(even) .bloc-services__container-texts {
+  padding-left: 2.5%;
+}
+
+.bloc-services:nth-child(odd) .bloc-services__container-texts {
+  padding-right: 5%;
+}
+
+.bloc-services__container-texts,
+.bloc-services__image {
+  width: 50%;
+}
+
+.bloc-services__title {
+  font-size: 30px;
+  color: var(--color-black);
+  margin-bottom: 25px;
+}
+
+.bloc-services__title span {
+  color: var(--color-orange);
+}
+
+.bloc-services__description {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.bloc-services__image {
+  border-radius: 15px;
+}
+
+/* START : testimonies */
+
+.testimonies__title {
+  margin-bottom: 60px;
+}
+
+.testimonies__container {
+  position: relative;
+}
+
+.testimonies__video  {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 60px);
+  bottom: 0;
+  /* margin-top: 60px; */
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.testimonies__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Card user */
+
+.card-user {
+  width: 31%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 20px 0px #4647540F;
+}
+
+.card-user__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-user__avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  object-fit: cover; /* <- Permet de garder le ratio de l'image */ 
+  object-position: top center; /* <- Permet de positioner l'image */ 
+  border: solid 5px var(--color-green);
+}
+
+.card-user__informations {
+  margin-left: 10px;
+  
+}
+
+.card-user__name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-user__job {
+  margin-bottom: 5px;
+}
+
+.card-user__key-points {
+  color: grey;
+}
+
+.card-user__quote {
+  line-height: 1.5rem;
 }
