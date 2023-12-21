@@ -67,6 +67,29 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 1300px) {
+  .flux {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .flux {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .flux {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
 /* END : flux */
 
 /* START : texts */
@@ -166,14 +189,48 @@ body {
 }
 
 /* 800px = tablette portrait */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
 
   .hero__flux {
     flex-direction: column;
   }
+
+  .hero__container-texts {
+    width: 100%;
+    padding-right: 30%;
+  }
+
+  .hero__introduction {
+    margin-bottom: 50px;
+  }
+
+  .hero__container-images {
+    height: 450px;
+    width: 500px;
+    align-self: center;
+  }
 }
 
-/* 450px =  mobile */
+@media screen and (max-width: 700px) {
+  .hero__container-images,
+  .hero__video {
+    display: none;
+  }
+
+  .hero {
+    background-color: #fff;
+  }
+
+  .hero__container-texts {
+    padding-right: 0;
+  }
+
+  .hero__title {
+    font-size: 40px;
+  }
+}
+
+/* 450px =  mobile 
 @media screen and (max-width: 450px) {
 
   .hero {
@@ -187,7 +244,7 @@ body {
   .hero__container-images {
     display: none;
   }
-}
+}  */
 
 /* END : hero */
 
@@ -251,6 +308,31 @@ body {
   font-weight: 600;
   color: #464754;
 }
+
+@media screen and (max-width: 1100px) {
+  .offers__title {
+    width: 70%;
+  }
+
+  .offers__list {
+    flex-wrap: wrap;
+  }
+
+  .card-offer {
+    width: 48%;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .offers__title {
+    width: 100%;
+  }
+
+  .card-offer {
+    width: 100%;
+  }
+}
 /* END : offers */
 
 /* START : services */
@@ -300,6 +382,26 @@ body {
 .bloc-services__image {
   border-radius: 15px;
 }
+
+@media screen and (max-width: 1100px) {
+  .bloc-services,
+  .bloc-services:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .bloc-services__container-texts,
+  .bloc-services__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* END : services */
 
 /* START : testimonies */
 
