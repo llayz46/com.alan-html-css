@@ -29,6 +29,7 @@ body {
 
 .header__image {
   width: 100px;
+  cursor: pointer;
 }
 
 .header__list-link {
@@ -628,6 +629,7 @@ body {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(263deg) brightness(103%) contrast(101%);
   width: 120px;
   margin: 50px 0;
+  cursor: pointer;
 }
 
 .footer__list {
@@ -664,6 +666,15 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  transition: all 0.08s ease-out 0s;
+}
+
+.list__link:hover {
+  color: #fff;
+}
+
+.list__link--underline:hover {
+  text-decoration: underline 2px;
 }
 
 .list__arrow {
@@ -680,10 +691,18 @@ body {
   margin-top: 24px;
   width: 24px;
   filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(198%) hue-rotate(186deg) brightness(96%) contrast(90%);
+  transition: all 0.12s ease-out 0s;
+}
+
+.sublist__icon:hover {
+  transform: scale(1.1);
+}
+
+.list__store-container {
+  margin-top: 15px;
 }
 
 .list__store {
-  margin-top: 15px;
   height: 40px;
 }
 
