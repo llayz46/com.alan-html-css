@@ -617,8 +617,11 @@ body {
 
 /* START : footer */
 .footer {
+  position: relative;
   background-color: var(--color-anthracite);
   padding-bottom: 75px;
+  margin-top: -275px;
+  z-index: 1;
 }
 
 .footer__logo {
