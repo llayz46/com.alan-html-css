@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Se connecter</title>
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+
+  <body>
+    <!-- START : main -->
+    <main>
+      <section class="login">
+        <div class="login__flux">
+          <a href="./index.html">
+            <img class="login__logo" src="./assets/icons/logo-alan-2.0.svg" alt="Logo alan">
+          </a>
+          <h1 class="login__title t-title tb-title">Content de vous revoir !</h1>
+          <h2 class="login__register t-text">Tu n'as pas encore de compte ? <a class="t-link" href="#">Inscris-toi</a></h2>
+          <form class="login__form" action="#pageclip?#" method="post">
+            <label class="login__container-input" for="email">
+              Identifiant ou email
+              <input class="login__input" type="email" name="email" id="email" autocomplete="email" required>
+            </label>
+
+            <label class="login__container-input" for="password">
+              Mot de passe
+              <input class="login__input" type="password" name="password" id="password" autocomplete="current-password" required>
+            </label>
+
+            <div class="login__container-text">
+              <label class="login__remember" for="remember">
+                Se souvenir de moi
+                <input class="login__remember-check" type="checkbox" id="check">
+              </label>
+              <a class="t-link" href="#">Mot de passe oublié ?</a>
+            </div>
+            <a href="./index.html">
+              <input class="login__button" type="button" value="Se connecter">
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- END : main -->
+  </body>
+</html>
