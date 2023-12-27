@@ -330,6 +330,7 @@ body {
   .hero__container-texts {
     width: 100%;
     text-align: center;
+    padding-left: 0;
   }
 
   .hero__introduction {
