@@ -678,9 +678,21 @@ body {
   .data__title {
     width: 80%;
   }
+
+  .data__container-texts {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 850px) {
+  .data__flux {
+    margin-bottom: 70px;
+  }
+
+  .data__title {
+    width: 100%;
+  }
+
   .data__flex-content {
     flex-direction: column-reverse;
   }
@@ -691,7 +703,6 @@ body {
 
   .data__container-texts {
     width: 100%;
-    padding: 0;
   }
 
   .card-data__container {
@@ -741,6 +752,7 @@ body {
 .why-us__flex-content {
   display: flex;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .why-us__container-texts,
@@ -779,6 +791,36 @@ body {
   transform-origin: bottom right;
   transform: scale(1.1) rotate(-5deg) translateX(50px);
 }
+
+@media screen and (max-width: 1000px) {
+  .why-us__container-texts {
+    width: 60%;
+    padding-right: 0;
+  }
+
+  .why-us__container-images {
+    width: auto;
+  }
+
+  .why-us__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .why-us__flex-content {
+    flex-direction: column;
+  }
+
+  .why-us__container-texts {
+    width: 100%;
+    padding: 0;
+  }
+
+  .why-us__button-title {
+    margin: 0px auto 20px 0;
+  }
+}
 /* END : why-us */
 
 /* START : testimonies */
@@ -801,6 +843,7 @@ body {
 .card-user {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
   background-color: #f5f8fe;
   padding: 32px 24px;
@@ -856,6 +899,47 @@ body {
   object-fit: cover;
   object-position: top center;
 }
+
+@media screen and (max-width: 1100px) {
+  .testimonies__title {
+    padding-right: 10%;
+    margin-bottom: 17px;
+  }
+
+  .cards-user__container {
+    margin-bottom: 100px;
+  }
+
+  .card-user__avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .testimonies__title {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .testimonies__note {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  .cards-user__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .card-user {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+}
 /* END : testimonies */
 
 /* START : health */
@@ -889,7 +973,7 @@ body {
 
 .health__background {
   position: absolute;
-  top: 0;
+  bottom: 275px;
   background: radial-gradient(33.57% 67.61% at 41.67% -32.5%,
   rgba(153, 233, 204, 0.12) 0%, rgba(153, 233, 204, 0) 100%),
   radial-gradient(85.21% 78.82% at 94.59% -5.42%,
@@ -901,6 +985,28 @@ body {
   width: 100%;
   height: 65%;
   z-index: -1;
+}
+
+@media screen and (max-width: 650px) {
+  .health__container-button {
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+  }
+
+  .health__marmot {
+    display: none;
+    margin-top: 0;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .health__background {
+    bottom: -80px;
+    height: 100%;
+  }
 }
 /* END : health */
 
@@ -1020,6 +1126,48 @@ body {
 
 .footer__alan-link:hover {
   color: var(--color-lightpurple);
+}
+
+@media screen and (max-width: 650px) {
+    .footer {
+    margin-top: 80px;
+  }
+
+  .footer__logo {
+    margin: 25px 0 10px 0;
+  }
+
+  .footer__list {
+    flex-direction: column;
+  }
+
+  .list__title {
+    margin-top: 30px;
+    margin-bottom: 2px;
+  }
+
+  .list__container {
+    width: 100%;
+  }
+
+  .sublist__icon {
+    margin-top: 10px;
+  }
+
+  .footer__separator {
+    display: none;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .footer__alan-insurancy,
+  .footer__alan-website {
+    width: 100%;
+  }
 }
 /* END : footer */
 
