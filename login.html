@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   </head>
 
   <body>
@@ -19,10 +20,10 @@
           </a>
           <h1 class="login__title t-title tb-title">Content de vous revoir !</h1>
           <h2 class="login__register t-text">Tu n'as pas encore de compte ? <a class="t-link" href="#">Inscris-toi</a></h2>
-          <form class="login__form" action="#pageclip?#" method="post">
+          <form class="login__form pageclip-form" action="https://send.pageclip.co/bXIwEZEoArUebaLsxwgk81pISh6xT3XD/login__form" method="post">
             <label class="login__container-input" for="email">
               Identifiant ou email
-              <input class="login__input" type="email" name="email" id="email" autocomplete="email" required>
+              <input class="login__input" type="email" name="email" placeholder="john@example.com" id="email" autocomplete="email" required>
             </label>
 
             <label class="login__container-input" for="password">
@@ -38,12 +39,13 @@
               <a class="t-link" href="#">Mot de passe oublié ?</a>
             </div>
             <a href="./index.html">
-              <input class="login__button" type="button" value="Se connecter">
+              <input class="login__button pageclip-form__submit" type="button" value="Se connecter">
             </a>
           </form>
         </div>
       </section>
     </main>
     <!-- END : main -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>
