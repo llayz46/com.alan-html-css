@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Copycat Alan.com</title>
-    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./assets/icons/favicon-alan.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -18,20 +18,22 @@
   <body>
     <!-- START : header -->
     <header class="header">
-      <img class="header__image" src="./assets/icons/logo-alan-2.0.svg" alt="Logo Alan"/>
+      <a class="header__container-logo" href="#">
+        <img class="header__logo" src="./assets/icons/logo-alan-2.0.svg" alt="Logo Alan"/>
+      </a>
       <nav class="header__nav">
         <ul class="header__list-link">
+          <li class="header__container-burger">
+            <button class="header__burger">
+              <img class="header__burger-icon" src="./assets/icons/alan-burger-menu.svg" alt="Burger menu">
+            </button>
+          </li>
+
           <li class="header__container-link">
             <a class="header__dropdown" href="#">
               Nos offres
               <img class="header__arrow" src="./assets/icons/arrow-down.svg" alt="Arrow down">
             </a>
-          </li>
-
-          <li class="header__container-burger">
-            <button class="header__burger">
-              <img class="header__burger-icon" src="./assets/icons/alan-burger-menu.svg" alt="Burger menu">
-            </button>
           </li>
 
           <li class="header__container-link">
@@ -70,7 +72,7 @@
       <section class="hero">
         <div class="hero__flux flux">
           <div class="hero__container-texts">
-            <h1 class="hero__title">Voici Alan, votre <strong>partenaire santé</strong> tout-en-un.</h1>
+            <h1 class="hero__title">Voici Alan, votre <strong>partenaire santé</strong> tout-en-un. <img class="hero__title-heart" src="./assets/icons/emoji-heart.svg" alt="Emoji coeur orange"></h1>
             <p class="hero__introduction t-text">Prenez en main votre santé et celle de vos équipes ! Plus <br>qu’une assurance, Alan s’occupe de votre bien-être <br>physique et mental au quotidien.</p>
             <div class="hero__container-button">
               <a class="b-style button__white" href="#">Découvrir les offres</a>
@@ -95,7 +97,9 @@
                 <img class="card-offer__icon" src="/assets/icons/emoji-startup-tpe.svg" alt="Emoji 1 bonhomme (représentant les Startup et les TPE)"/>
                 <h3 class="card-offer__title">Startups &<br> TPE</h3>
               </div>
-              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              <a class="card-offer__container-arrow" href="#">
+                <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              </a>
             </div>
             <p class="card-offer__description">
               Vous lancez votre entreprise ? Ou vous avez <strong>moins de 6 salariés</strong> ? Alan vous simplifie les démarches et vous aide dans vos 1er pas.
@@ -108,7 +112,9 @@
                 <img class="card-offer__icon" src="/assets/icons/emoji-pme.svg" alt="Emoji 2 bonhomme (représentant les PME)"/>
                 <h3 class="card-offer__title">Petites &<br> moyennes<br> entreprises</h3>
               </div>
-              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              <a class="card-offer__container-arrow" href="#">
+                <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              </a>
             </div>
             <p class="card-offer__description">
               Vous avez entre <strong>6 et 100 salariés</strong> ? Découvrez nos offres que ce soit pour gagner du temps, réduire vos coûts ou offrir le meilleur avantage à vos salariés.
@@ -121,7 +127,9 @@
                 <img class="card-offer__icon" src="/assets/icons/emoji-gc.svg" alt="Emoji 3 bonhomme (représentant les Grands Comptes)"/>
                 <h3 class="card-offer__title">Grands<br> Comptes</h3>
               </div>
-              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              <a class="card-offer__container-arrow" href="#">
+                <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              </a>
             </div>
             <p class="card-offer__description">
               Plusieurs <strong>centaines ou milliers de salariés</strong> ? Découvrez notre modèle intégré conseil, assurance & gestion et construisons ensemble l’offre sur-mesure pour prendre soin de vos équipes.
@@ -134,7 +142,9 @@
                 <img class="card-offer__icon" src="/assets/icons/emoji-nsalaries.svg" alt="Emoji maison (représentant les travailleurs non-salariés)"/>
                 <h3 class="card-offer__title">Travailleurs<br> non-salariés</h3>
               </div>
-              <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              <a class="card-offer__container-arrow" href="#">
+                <img class="card-offer__arrow" src="./assets/icons/emoji-right-arrow.svg" alt="Flèche droite">
+              </a>
             </div>
             <p class="card-offer__description">
               Chefs d’entreprise, freelances, auto-entrepreneurs, TNS ou mandataires sociaux, retrouvez notre offre de santé conçue <strong>pour les indépendants</strong>.
@@ -362,7 +372,9 @@
       <!-- START : footer -->
       <footer class="footer">
         <div class="footer__container flux">
-          <img class="footer__logo" src="./assets/icons/logo-alan-2.0.svg" alt="Logo alan">
+          <a class="footer__container-logo" href="#">
+            <img class="footer__logo" src="./assets/icons/logo-alan-2.0.svg" alt="Logo alan">
+          </a>
           <div class="footer__list"> 
             <ul class="list__container">
               <li class="list__item">
@@ -536,5 +548,6 @@
         </div>
       </footer>
     </main>
+    <script src="./javascript/script.js" type="text/javascript"></script>
   </body>
 </html>
