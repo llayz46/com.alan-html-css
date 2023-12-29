@@ -21,14 +21,13 @@
       <a class="header__container-logo" href="#">
         <img class="header__logo" src="./assets/icons/logo-alan-2.0.svg" alt="Logo Alan"/>
       </a>
-      <nav class="header__nav">
-        <ul class="header__list-link">
-          <li class="header__container-burger">
-            <button class="header__burger">
+      <nav class="header__nav" id="nav">
+        <div class="header__container-burger">
+          <button class="header__burger" id="icons">
               <img class="header__burger-icon" src="./assets/icons/alan-burger-menu.svg" alt="Burger menu">
-            </button>
-          </li>
-
+          </button>
+        </div>
+        <ul class="header__list-link" id="myList">
           <li class="header__container-link">
             <a class="header__dropdown" href="#">
               Nos offres
@@ -57,11 +56,15 @@
             </a>
           </li>
 
-          <li class="header__container-button">
+          <!-- <li class="header__container-button">
             <a class="b-style button__no-bg" href="./login.html">Me connecter</a>
             <a class="b-style button__white" href="#">Découvrir les offres</a>
-          </li>
+          </li> -->
         </ul>
+        <div class="header__container-button">
+          <a class="b-style button__no-bg" href="./login.html">Me connecter</a>
+          <a class="b-style button__white" href="#">Découvrir les offres</a>
+        </div>
       </nav>
     </header>
     <!-- END : header -->
