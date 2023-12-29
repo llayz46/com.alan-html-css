@@ -28,8 +28,7 @@ body {
   transition: all 0.2s ease-out 0s;
 }
 
-header.scroll,
-.header__list-link.scroll {
+header.scroll {
   background-color: white;
   box-shadow: 0 12px 12px -10px #2828301a;
 }
@@ -145,6 +144,11 @@ header.scroll,
 
   .header__nav.active .header__list-link {
     opacity: 1;
+  }
+
+  .header__list-link.scroll {
+    background-color: white;
+    box-shadow: 0 12px 12px -10px #2828301a;
   }
 }
 
